@@ -5,6 +5,7 @@ import json
 import torch
 from Brain import NeuralNet
 from NeuralNetwork import bag_of_words, tokenize
+from Task import NonInputExecution
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open("intents.json", 'r') as json_data:
@@ -46,7 +47,13 @@ def Main():
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 reply = random.choice(intent["responses"])
-                speak(reply)
+                if reply[0] == '*':
+                    speak(reply[1:])
+                    exit()
+                elif reply[0] == '_':
+                    NonInputExecution(reply)
+                else:
+                    speak(reply)
 
 
 while True:

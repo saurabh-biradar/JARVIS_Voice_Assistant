@@ -24,10 +24,10 @@
                 "exit"
             ],
             "responses": [
-                "Ok sir bye",
-                "See you later sir",
-                "I am going",
-                "Ok sir good bye"
+                "*Ok sir bye",
+                "*See you later sir",
+                "*I am going",
+                "*Ok sir good bye"
             ]
         },
         {
@@ -41,6 +41,54 @@
                 "Fine",
                 "Perfect",
                 "Are you fine? I am fine"
+            ]
+        },
+        {
+            "tag": "identity",
+            "patterns": [
+                "what is your name",
+                "who are you",
+                "your name",
+                "what are you"
+            ],
+            "responses": [
+                "Sir I am Jarvis! Your personal assistant",
+                "I am Jarvis 2.0",
+                "The AI Assistant",
+                "Great Assistant"
+            ]
+        },
+        {
+            "tag": "time",
+            "patterns": [
+                "what is the time",
+                "what is current time",
+                "what's the time"
+            ],
+            "responses": [
+                "_time"
+            ]
+        },
+        {
+            "tag": "date",
+            "patterns": [
+                "what is the date",
+                "what is today's date",
+                "what's the date"
+            ],
+            "responses": [
+                "_date"
+            ]
+        },
+        {
+            "tag": "day",
+            "patterns": [
+                "what is the day",
+                "what is today's day",
+                "what's the day"
+            ],
+            "responses": [
+                "_day"
             ]
         }
     ]
