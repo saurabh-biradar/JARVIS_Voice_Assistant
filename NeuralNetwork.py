@@ -1,7 +1,6 @@
 import numpy as np  # pip install numpy
 import nltk  # pip install nltk
 from nltk.stem import PorterStemmer
-
 Stemmer = PorterStemmer()
 
 

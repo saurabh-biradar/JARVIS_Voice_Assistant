@@ -63,7 +63,8 @@
             "patterns": [
                 "what is the time",
                 "what is current time",
-                "what's the time"
+                "what's the time",
+                "tell the time"
             ],
             "responses": [
                 "_time"
@@ -74,7 +75,8 @@
             "patterns": [
                 "what is the date",
                 "what is today's date",
-                "what's the date"
+                "what's the date",
+                "tell the date"
             ],
             "responses": [
                 "_date"
@@ -85,7 +87,8 @@
             "patterns": [
                 "what is the day",
                 "what is today's day",
-                "what's the day"
+                "what's the day",
+                "tell the day"
             ],
             "responses": [
                 "_day"

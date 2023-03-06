@@ -29,9 +29,12 @@ Name = "Jarvis"
 
 
 def Main():
-    sentence = Listen()
-    if(sentence == "bye"):
-        exit()
+    while(True):
+        sentence = Listen()
+        if(sentence == "Say that again please..."):
+            speak(sentence)
+        else:
+            break
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
@@ -54,7 +57,10 @@ def Main():
                     NonInputExecution(reply)
                 else:
                     speak(reply)
+    else:
+        speak("Say that again please...")
 
 
+speak("Sir, Please give your command")  
 while True:
     Main()

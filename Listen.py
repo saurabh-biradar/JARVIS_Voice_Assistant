@@ -14,7 +14,6 @@ def Listen():
         query = r.recognize_google(audio, language="en-in")
         print(f"You Said : {query}")
     except:
-        print("Say that again please...")
-        return ""
+        return "Say that again please..."
     query = str(query)
     return query.lower()
