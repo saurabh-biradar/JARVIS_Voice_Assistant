@@ -93,6 +93,75 @@
             "responses": [
                 "_day"
             ]
+        },
+        {
+            "tag": "youtube",
+            "patterns": [
+                "open the youtube",
+                "start the youtube",
+                "run the youtube"
+            ],
+            "responses": [
+                "_youtube"
+            ]
+        },
+        {
+            "tag": "facebook",
+            "patterns": [
+                "open the facebook",
+                "start the facebook",
+                "run the facebook"
+            ],
+            "responses": [
+                "_facebook"
+            ]
+        },
+        {
+            "tag": "linkdin",
+            "patterns": [
+                "open the linkdin",
+                "start the linkdin",
+                "run the linkdin"
+            ],
+            "responses": [
+                "_linkdin"
+            ]
+        },
+        {
+            "tag": "twitter",
+            "patterns": [
+                "open the twitter",
+                "start the twitter",
+                "run the twitter"
+            ],
+            "responses": [
+                "_twitter"
+            ]
+        },
+        {
+            "tag": "cmd",
+            "patterns": [
+                "open the cmd",
+                "open the command prompt",
+                "start the cmd",
+                "start the command prompt",
+                "run the cmd",
+                "run the command prompt"
+            ],
+            "responses": [
+                "_cmd"
+            ]
+        },
+        {
+            "tag": "camera",
+            "patterns": [
+                "open the camera",
+                "start the camera",
+                "run the camera"
+            ],
+            "responses": [
+                "_camera"
+            ]
         }
     ]
 }
