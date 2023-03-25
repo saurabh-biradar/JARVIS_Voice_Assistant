@@ -2,6 +2,7 @@ import datetime
 import webbrowser
 import os
 import cv2
+import wikipedia
 from Speak import speak
 
 
@@ -45,6 +46,13 @@ def camera():
     cap.release()
     cv2.destroyAllWindows()
 
+def wikipedia_search():
+    speak("Searching Wikipedia...")
+    query = query.replace('wikipedia','')
+    results = wikipedia.summary(query,sentences = 2)
+    speak("According to wikipedia")
+    speak(results)
+
 def NonInputExecution(query):
     query = str(query)
 
@@ -67,3 +75,5 @@ def NonInputExecution(query):
             command_prompt()
         case "_camera":
             camera()
+        case "_wikipedia":
+            wikipedia_search()

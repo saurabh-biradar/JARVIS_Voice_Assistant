@@ -33,9 +33,11 @@
         {
             "tag": "health",
             "patterns": [
-                "how are you",
+                "how are you jarvis",
                 "are you fine",
-                "are you good"
+                "are you good",
+                "whats going on jarvis",
+                "how was the day jarvis"
             ],
             "responses": [
                 "Fine",
@@ -49,7 +51,8 @@
                 "what is your name",
                 "who are you",
                 "your name",
-                "what are you"
+                "what are you",
+                "can you tell me your name"
             ],
             "responses": [
                 "Sir I am Jarvis! Your personal assistant",
@@ -64,7 +67,10 @@
                 "what is the time",
                 "what is current time",
                 "what's the time",
-                "tell the time"
+                "tell the time",
+                "can you tell me the time",
+                "please tell me time",
+                "can you please tell me time"
             ],
             "responses": [
                 "_time"
@@ -76,7 +82,10 @@
                 "what is the date",
                 "what is today's date",
                 "what's the date",
-                "tell the date"
+                "tell the date",
+                "can you tell me the date",
+                "please tell me date",
+                "can you please tell me date"
             ],
             "responses": [
                 "_date"
@@ -88,7 +97,10 @@
                 "what is the day",
                 "what is today's day",
                 "what's the day",
-                "tell the day"
+                "tell the day",
+                "can you tell me the day",
+                "please tell me day",
+                "can you please tell me day"
             ],
             "responses": [
                 "_day"
@@ -99,7 +111,10 @@
             "patterns": [
                 "open the youtube",
                 "start the youtube",
-                "run the youtube"
+                "run the youtube",
+                "can you please open the youtube for me",
+                "please open the youtube",
+                "can you please open the youtube"
             ],
             "responses": [
                 "_youtube"
@@ -110,7 +125,10 @@
             "patterns": [
                 "open the facebook",
                 "start the facebook",
-                "run the facebook"
+                "run the facebook",
+                "can you please open the facebook for me",
+                "please open the facebook",
+                "can you please open the facebook"
             ],
             "responses": [
                 "_facebook"
@@ -121,7 +139,10 @@
             "patterns": [
                 "open the linkdin",
                 "start the linkdin",
-                "run the linkdin"
+                "run the linkdin",
+                "can you please open the linkdin for me",
+                "please open the linkdin",
+                "can you please open the linkdin"
             ],
             "responses": [
                 "_linkdin"
@@ -132,7 +153,10 @@
             "patterns": [
                 "open the twitter",
                 "start the twitter",
-                "run the twitter"
+                "run the twitter",
+                "can you please open the twitter for me",
+                "please open the twitter",
+                "can you please open the twitter"
             ],
             "responses": [
                 "_twitter"
@@ -146,7 +170,13 @@
                 "start the cmd",
                 "start the command prompt",
                 "run the cmd",
-                "run the command prompt"
+                "run the command prompt",
+                "can you please open the command prompt for me",
+                "please open the command prompt",
+                "can you please open the command prompt",
+                "can you please open the cmd for me",
+                "please open the cmd",
+                "can you please open the cmd"
             ],
             "responses": [
                 "_cmd"
@@ -157,10 +187,29 @@
             "patterns": [
                 "open the camera",
                 "start the camera",
-                "run the camera"
+                "run the camera",
+                "can you please open the camera for me",
+                "please open the camera",
+                "can you please open the camera",
+                "click the photo",
+                "can you take the photo"
             ],
             "responses": [
                 "_camera"
+            ]
+        },
+        {
+            "tag": "wikipedia",
+            "patterns": [
+                "wikipedia of",
+                "search information about",
+                "information about",
+                "search for",
+                "search on wikipedia for",
+                "wikipedia search"
+            ],
+            "responses": [
+                "_wikipedia"
             ]
         }
     ]
