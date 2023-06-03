@@ -3,14 +3,11 @@ import nltk  # pip install nltk
 from nltk.stem import PorterStemmer
 Stemmer = PorterStemmer()
 
-
 def tokenize(sentence):
     return nltk.word_tokenize(sentence)
 
-
 def stem(word):
     return Stemmer.stem(word.lower())
-
 
 def bag_of_words(tokenized_sentence, words):
     sentence_word = [stem(word) for word in tokenized_sentence]

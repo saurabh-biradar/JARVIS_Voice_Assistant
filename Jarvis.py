@@ -15,7 +15,6 @@ from PyQt5.QtWidgets import *
 from PyQt5.uic import Loader
 from JarvisUi import Ui_JarvisVirtualAssistent
 
-
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open("intents.json", 'r') as json_data:
     intents = json.load(json_data)
@@ -34,8 +33,6 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-Name = "Jarvis"
-
 class MainThread(QThread):
     def __init__(self):
         super(MainThread,self).__init__()
@@ -44,7 +41,6 @@ class MainThread(QThread):
         while(True):
             self.Main1()
         # self.close()
-    
 
     def Main1(self):
         while(True):

@@ -1,6 +1,5 @@
 import pyttsx3  # pip install pyttsx3
 
-
 def speak(Text):
     engine = pyttsx3.init('sapi5')  # object creation
     # pyttsx3 supports three TTS engine:

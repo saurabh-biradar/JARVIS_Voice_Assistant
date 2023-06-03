@@ -161,6 +161,19 @@
             "responses": [
                 "_twitter"
             ]
+        },        
+        {
+            "tag": "google",
+            "patterns": [
+                "jarvis open google",
+                "please open google",
+                "search on google",
+                "open google",
+                "can you please search for me"
+            ],
+            "responses": [
+                "_google"
+            ]
         },
         {
             "tag": "cmd",
@@ -202,14 +215,137 @@
             "tag": "wikipedia",
             "patterns": [
                 "wikipedia of",
-                "search information about",
-                "information about",
-                "search for",
-                "search on wikipedia for",
+                "search on wikipedia",
                 "wikipedia search"
             ],
             "responses": [
                 "_wikipedia"
+            ]
+        },
+        {
+            "tag": "ipaddress",
+            "patterns": [
+                "ip address of my computer",
+                "ip address",
+                "what is the ip address",
+                "what is ip address of my computer",
+                "what is my computer ip address",
+                "tell the ip address of my pc",
+                "tell the ip address",
+                "can you tell me the ip address",
+                "please tell me the ip address of my computer",
+                "can you please tell me ip address of my pc"
+            ],
+            "responses": [
+                "_ipaddress"
+            ]
+        },
+        {
+            "tag": "joke",
+            "patterns": [
+                "jarvis tell the joke",
+                "tell the joke",
+                "joke"
+            ],
+            "responses": [
+                "_joke"
+            ]
+        },
+        {
+            "tag": "alarm",
+            "patterns": [
+                "jarvis set the alarm",
+                "set alarm",
+                "alarm"
+            ],
+            "responses": [
+                "_alarm"
+            ]
+        },
+        {
+            "tag": "shutdown",
+            "patterns": [
+                "jarvis shutdown the system",
+                "shutdown the computer",
+                "shutdown",
+                "switch off the computer"
+            ],
+            "responses": [
+                "_shutdown"
+            ]
+        },
+        {
+            "tag": "restart",
+            "patterns": [
+                "jarvis restart the system",
+                "restart the computer",
+                "restart"
+            ],
+            "responses": [
+                "_restart"
+            ]
+        },
+        {
+            "tag": "screenshot",
+            "patterns": [
+                "jarvis take the screenshot",
+                "capture screenshot",
+                "screenshot"
+            ],
+            "responses": [
+                "_screenshot"
+            ]
+        },
+        {
+            "tag": "music",
+            "patterns": [
+                "play music",
+                "play song",
+                "start song"
+            ],
+            "responses": [
+                "_music"
+            ]
+        },
+        {
+            "tag": "movies",
+            "patterns": [
+                "play movie",
+                "start movie"
+            ],
+            "responses": [
+                "_movies"
+            ]
+        },
+        {
+            "tag": "notepad",
+            "patterns": [
+                "open notepad"
+            ],
+            "responses": [
+                "_notepad"
+            ]
+        },
+        {
+            "tag": "volumeup",
+            "patterns": [
+                "volume up",
+                "jarvis up the voulume",
+                "up the volume"
+            ],
+            "responses": [
+                "_volumeup"
+            ]
+        },
+        {
+            "tag": "volumedown",
+            "patterns": [
+                "volume down",
+                "jarvis down the voulume",
+                "down the volume"
+            ],
+            "responses": [
+                "_volumedown"
             ]
         }
     ]

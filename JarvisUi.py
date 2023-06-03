@@ -23,7 +23,7 @@ class Ui_JarvisVirtualAssistent(object):
         self.label.setStyleSheet("")
         self.label.setText("")
         # Change the path of GIF According to PC
-        self.label.setPixmap(QtGui.QPixmap("C:/Users/prasa/Downloads/main-Comp-1.gif"))
+        self.label.setPixmap(QtGui.QPixmap("main-Comp-1.gif"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
