@@ -7,7 +7,7 @@ import torch
 from Brain import NeuralNet
 from NeuralNetwork import bag_of_words, tokenize
 from Task import NonInputExecution
-from PyQt5 import QtWidgets,QtCore,QtGui
+from PyQt5 import QtWidgets, QtCore, QtGui
 from PyQt5.QtGui import QMovie
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -33,11 +33,13 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
+
 class MainThread(QThread):
     def __init__(self):
-        super(MainThread,self).__init__()
+        super(MainThread, self).__init__()
+
     def run(self):
-        speak("Sir, Please give your command")  
+        speak("Sir, Please give your command")
         while(True):
             self.Main1()
         # self.close()
@@ -59,6 +61,7 @@ class MainThread(QThread):
         tag = tags[predicted.item()]
         probs = torch.softmax(output, dim=1)
         prob = probs[0][predicted.item()]
+        print("Probability : ", prob.item())
 
         if prob.item() > 0.75:
             for intent in intents['intents']:
@@ -66,7 +69,6 @@ class MainThread(QThread):
                     self.reply = random.choice(intent["responses"])
                     if self.reply[0] == '*':
                         speak(self.reply[1:])
-                        self.close()
                         exit()
                     elif self.reply[0] == '_':
                         NonInputExecution(self.reply)
@@ -78,18 +80,22 @@ class MainThread(QThread):
 
 startExecution = MainThread()
 
+
 class Main(QMainWindow):
     def __init__(self):
         super().__init__()
         self.ui = Ui_JarvisVirtualAssistent()
         self.ui.setupUi(self)
         self.ui.pushButton.clicked.connect(self.startTask)
+
     def startTask(self):
         # Change the path of GIF According to PC
-        self.ui.movie = QtGui.QMovie("C:/Users/prasa/Downloads/main-Comp-1.gif")
+        self.ui.movie = QtGui.QMovie(
+            "C:/Users/prasa/Downloads/main-Comp-1.gif")
         self.ui.label.setMovie(self.ui.movie)
         self.ui.movie.start()
         startExecution.start()
+
 
 app = QApplication(sys.argv)
 jarvis = Main()

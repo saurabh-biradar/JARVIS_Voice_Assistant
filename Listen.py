@@ -1,5 +1,6 @@
 import speech_recognition as sr  # pip install speech_recognition
 
+
 def Listen():
     r = sr.Recognizer()  # object creation
     with sr.Microphone() as source:  # use the default microphone as the audio source
@@ -15,4 +16,6 @@ def Listen():
     except:
         return "Say that again please..."
     query = str(query)
-    return query.lower()
+    query = query.lower()
+    query = query.replace("jarvis", "")
+    return query

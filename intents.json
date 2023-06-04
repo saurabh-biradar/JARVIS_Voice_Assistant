@@ -135,17 +135,17 @@
             ]
         },
         {
-            "tag": "linkdin",
+            "tag": "linkedin",
             "patterns": [
-                "open the linkdin",
-                "start the linkdin",
-                "run the linkdin",
-                "can you please open the linkdin for me",
-                "please open the linkdin",
-                "can you please open the linkdin"
+                "open the linkedin",
+                "start the linkedin",
+                "run the linkedin",
+                "can you please open the linkedin for me",
+                "please open the linkedin",
+                "can you please open the linkedin"
             ],
             "responses": [
-                "_linkdin"
+                "_linkedin"
             ]
         },
         {
@@ -161,7 +161,7 @@
             "responses": [
                 "_twitter"
             ]
-        },        
+        },
         {
             "tag": "google",
             "patterns": [
