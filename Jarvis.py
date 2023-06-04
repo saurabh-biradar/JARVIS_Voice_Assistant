@@ -1,5 +1,6 @@
 from Listen import Listen
 import sys
+import time
 from Speak import speak
 import random
 import json
@@ -47,10 +48,12 @@ class MainThread(QThread):
     def Main1(self):
         while(True):
             self.sentence = Listen()
+
             if(self.sentence == "Say that again please..."):
                 speak(self.sentence)
             else:
                 break
+        self.sentence = self.sentence.replace("jarvis", "")
         self.sentence = tokenize(self.sentence)
         X = bag_of_words(self.sentence, all_words)
         X = X.reshape(1, X.shape[0])
@@ -72,9 +75,14 @@ class MainThread(QThread):
                         exit()
                     elif self.reply[0] == '_':
                         NonInputExecution(self.reply)
+                    elif self.reply[0] == '^':
+                        speak(self.reply[1:])
+                        time.sleep(5)
                     else:
                         speak(self.reply)
         else:
+            # self.reply = random.choice(intents['error'])
+            # speak(self.reply)
             speak("Say that again please...")
 
 

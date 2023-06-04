@@ -17,5 +17,4 @@ def Listen():
         return "Say that again please..."
     query = str(query)
     query = query.lower()
-    query = query.replace("jarvis", "")
     return query

@@ -1,6 +1,14 @@
 import pyttsx3  # pip install pyttsx3
+from decouple import config
+
+USER = config('USER')
+BOTNAME = config('BOTNAME')
+
 
 def speak(Text):
+    Text = str(Text)
+    Text = Text.replace("<USER>", USER)
+    Text = Text.replace("<BOTNAME>", BOTNAME)
     engine = pyttsx3.init('sapi5')  # object creation
     # pyttsx3 supports three TTS engine:
     # sapi5 - Windows

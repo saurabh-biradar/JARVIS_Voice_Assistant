@@ -1,0 +1,17 @@
+{
+    "patterns": [
+        "saurabh",
+        "prasad",
+        "rakesh"
+    ],
+    "mobileno": {
+        "saurabh": "7559275847",
+        "prasad": "7249596920",
+        "rakesh": "7972487464"
+    },
+    "emailAddress": {
+        "saurabh": "saurabhbiradar60@gmail.com",
+        "prasad": "prasadbramhapurkar1234@gmail.com",
+        "rakesh": "rakeshchoudhary.rc917@gmail.com"
+    }
+}
