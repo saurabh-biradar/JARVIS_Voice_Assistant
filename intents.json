@@ -29,7 +29,8 @@
                 "I'll be back soon",
                 "sleep",
                 "exit",
-                "I got to go now"
+                "I got to go now",
+                "ok close"
             ],
             "responses": [
                 "*Ok <USER> bye",

@@ -13,27 +13,29 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_JarvisVirtualAssistent(object):
     def setupUi(self, JarvisVirtualAssistent):
+        JarvisVirtualAssistent.showFullScreen()
         JarvisVirtualAssistent.setObjectName("JarvisVirtualAssistent")
-        JarvisVirtualAssistent.resize(1371, 887)
         JarvisVirtualAssistent.setStyleSheet("background-color: rgb(0, 0, 0);")
         self.centralwidget = QtWidgets.QWidget(JarvisVirtualAssistent)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(0, 10, 1371, 851))
+        self.label.setGeometry(QtCore.QRect(0, 0, 1366, 768))
         self.label.setStyleSheet("")
         self.label.setText("")
-        # Change the path of GIF According to PC
-        self.label.setPixmap(QtGui.QPixmap("main-Comp-1.gif"))
+        self.label.setPixmap(QtGui.QPixmap(
+            "main-Comp-1.gif"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(620, 410, 131, 51))
+        self.pushButton.setGeometry(QtCore.QRect(585, 360, 200, 51))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton.setFont(font)
-        self.pushButton.setStyleSheet("background-color: rgb(199, 200, 255);")
+        self.pushButton.setStyleSheet("background-color: rgba(0, 0, 0, 100);")
+        # self.pushButton.setStyleSheet(
+        #     "background-color: rgb(0, 0, 0);  color: white;")
         self.pushButton.setObjectName("pushButton")
         JarvisVirtualAssistent.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(JarvisVirtualAssistent)
@@ -49,8 +51,9 @@ class Ui_JarvisVirtualAssistent(object):
 
     def retranslateUi(self, JarvisVirtualAssistent):
         _translate = QtCore.QCoreApplication.translate
-        JarvisVirtualAssistent.setWindowTitle(_translate("JarvisVirtualAssistent", "MainWindow"))
-        self.pushButton.setText(_translate("JarvisVirtualAssistent", "START"))
+        JarvisVirtualAssistent.setWindowTitle(
+            _translate("JarvisVirtualAssistent", "MainWindow"))
+        self.pushButton.setText(_translate("JarvisVirtualAssistent", ""))
 
 
 if __name__ == "__main__":

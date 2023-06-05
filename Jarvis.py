@@ -43,7 +43,6 @@ class MainThread(QThread):
         speak("Sir, Please give your command")
         while(True):
             self.Main1()
-        # self.close()
 
     def Main1(self):
         while(True):
@@ -84,6 +83,7 @@ class MainThread(QThread):
             # self.reply = random.choice(intents['error'])
             # speak(self.reply)
             speak("Say that again please...")
+        return True
 
 
 startExecution = MainThread()
@@ -97,9 +97,8 @@ class Main(QMainWindow):
         self.ui.pushButton.clicked.connect(self.startTask)
 
     def startTask(self):
-        # Change the path of GIF According to PC
         self.ui.movie = QtGui.QMovie(
-            "C:/Users/prasa/Downloads/main-Comp-1.gif")
+            "main-Comp-1.gif")
         self.ui.label.setMovie(self.ui.movie)
         self.ui.movie.start()
         startExecution.start()
@@ -108,7 +107,4 @@ class Main(QMainWindow):
 app = QApplication(sys.argv)
 jarvis = Main()
 jarvis.show()
-exit(app.exec_())
-
-# while True:
-# Main1()
+exit(app.exec())
