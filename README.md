@@ -18,20 +18,9 @@
 ## Installation
 
 - Install Python v3.6 or higher
-- pip install SpeechRecognition
-- pip install PyAudio
+- pip install SpeechRecognition PyAudio pyttsx3 torch numpy nltk PyQt5 opencv-python wikipedia pyjokes pywhatkit python-decouple 
 - To avoid jarvis stuck in listening mode update audio = r.listen(source, 0, 5) in Listen.py file
-- pip install pyttsx3
-- pip install torch
-- pip install numpy
-- pip install nltk
 - Run following command in python file :- 
     nltk.download('punkt')
-- pip install PyQt5
-- pip install opencv-python
-- pip install wikipedia
-- pip install pyjokes
-- pip install pywhatkit
-- pip install python-decouple
 
 ### After installing all these modules, update contact details in .env file
